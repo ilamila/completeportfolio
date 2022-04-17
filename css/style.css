@@ -1,0 +1,417 @@
+
+body{
+	margin:1%;
+	padding:1%;
+	font-size: 150%;
+	background: #f1f1f1 url("../images/rock.jpg");
+}
+
+
+h1{
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Indie Flower', cursive;
+	margin-top: 20px;
+}
+h2{
+	font-family: 'Indie Flower', cursive;
+}
+.active{
+	background:lightcoral;
+    text-transform: uppercase;
+	text-align: center;
+	border: 2px solid black;
+}
+
+.active a{
+	text-decoration: underline;
+}
+.inuse{
+	background:lightcoral;
+    text-transform: uppercase;
+	text-align: center;
+	border: 2px solid black;
+}
+.inuse a{
+	text-decoration: underline;
+}
+.inuse1{
+	background:lightcoral;
+    text-transform: uppercase;
+	text-align: center;
+	border: 2px solid black;
+}
+.inuse1 a{
+	text-decoration: underline;
+
+}
+.active1{
+	background:lightcoral;
+    text-transform: uppercase;
+	text-align: center;
+	border: 2px solid black;
+}
+.active1 a{
+	text-decoration: underline;
+}
+
+.inuse2{
+	background:lightcoral;
+    text-transform: uppercase;
+	text-align: center;
+	border: 2px solid black;
+}
+.inuse2 a{
+	text-decoration: underline;
+}
+
+
+.container img{
+    height: 400px;
+    width: 90%;
+    border: 3px solid black;
+    border-radius: 10px;
+	margin:auto;
+	display: block;
+
+}
+img:nth-child(3n+2){
+	filter: drop-shadow(3px 5px 7px black);
+    opacity: 90%;
+    position: relative;
+    left: 85px;
+    top: 2px;
+}
+img:hover{
+	filter: saturate(2.2);
+	border:dashed lightcoral;
+}
+
+
+h2{
+	font-size: 2em;
+	font-weight: bold;
+}
+
+
+p, h1, h2 {
+    padding: 10px;
+}
+
+/* div p{
+	border: 1px solid black;
+	text-align: left !important;
+
+} */
+
+/* main, h1{
+	border: 2px solid grey;
+	margin: 10px 0;
+} */
+
+/* #wrapper div {
+	border: 2px solid grey;
+	margin: 10px 0;
+}
+.container div {
+	border: 2px solid grey;
+	margin: 10px 0;
+}
+.container div p{
+	border: none;
+} */
+
+.container{
+	display: grid;
+	grid-template-columns: 1fr;
+	width: 95%;
+	margin: auto;
+	gap: 15px;
+	justify-content: space-between;
+}
+div{
+	width:100%;
+	/* overflow: hidden; */
+}
+
+div p {
+	overflow: scroll;
+}
+#wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	justify-content: center;
+}
+
+#wrapper img{
+	height: 400px;
+    width: 90%;
+    border: 3px solid black;
+    border-radius: 3px;
+	margin:auto;
+	display: block;
+	margin-top: 5%;
+}
+
+
+nav li{
+	background-color: #beb8b8;
+	padding:10px;
+	border:1px solid black;
+	display: inline-block;
+	overflow: hidden;
+	width: 40%;
+}
+
+nav ul{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+a:visited{color: black}
+
+#food{
+	animation: almymove 5s ease;
+
+}
+@keyframes almymove {
+	from {width: 25px; opacity: 0;}
+	to {width: 360px; opacity: 1;}
+  }
+
+/*contact form below*/
+input, textarea {
+	padding: 10px;
+	border: 1px solid #E5E5E5;
+	width: 200px;
+	color: black;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;		
+}
+legend{ 
+	font-size: 125%;
+	font-style:italic;
+	text-align: left;
+	margin-right: 90px;
+    margin-left: 10px;
+  }
+textarea {
+	height: 150px;
+	line-height: 18px;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	border-color: #C9C9C9;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;	
+}
+
+.form label {
+	margin-left: 10px;
+	color: black;
+}
+
+/* ===========================
+   ====== Submit Button ====== 
+   =========================== */
+
+.submit input {
+	width: 100px; 
+	height: 40px;
+	background-color: lightcoral; 
+	color: black;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;		
+}
+
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (min-width: 770px) {
+	form{
+	  width: 80%;
+	  margin: 0 auto;
+	}
+  
+	input{
+	  width:80%;
+	}
+  
+	textarea{
+	  width:80%;
+	  height: 25vh;
+   }
+   
+   div + label{
+	  line-height: 25vh;
+	  vertical-align:top;
+   }
+  }  
+
+
+.skip{
+	left: -999px;
+	position: absolute;
+}
+.skip:focus {
+left:10px;
+}
+
+
+
+
+
+
+
+
+
+  .flip-card {
+	background-color: transparent;
+	width: 300px;
+	height: 200px;
+	border: 1px solid #f1f1f1;
+	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  
+  /* This container is needed to position the front and back side */
+  
+  .flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+  }
+  
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  
+  .flip-card:hover .flip-card-inner,
+  .flip-card:focus-within .flip-card-inner,
+  .flip-card:active .flip-card-inner,
+  .flip-card:focus .flip-card-inner {
+	transform: rotateY(-180deg);
+  }
+  
+  
+  /* Position the front and back side */
+  
+  .flip-card-front,
+  .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	/* Safari */
+	backface-visibility: hidden;
+  }
+  
+  
+  /* Style the front side (fallback if image is missing) */
+  
+  .flip-card-front {
+	background-color: #008CCC;
+	background-color: azure;
+	color: white;
+	color: black;
+  }
+  
+  
+  /* Style the back side */
+  
+  .flip-card-back {
+	background-color: #99CC66;
+	color: black;
+	transform: rotateY(180deg);
+  }
+
+
+
+
+
+
+
+
+ 
+ 
+  /*Tablet Query*/
+  @media (min-width: 768px) {
+	.tablet {
+	  /* display: block; */
+
+	}
+	div p{
+		font-size: larger
+	}
+	.container{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		width: 95%;
+		margin: auto;
+		gap: 15px;
+		justify-content: space-between;
+	}
+	.mobile, .desktop {
+	  display: none;
+	}
+
+	#wrapper div{
+		display: flex;
+		flex-direction: row;
+		flex-basis: 33%;
+		flex-wrap: wrap;
+		gap: 12px;
+		justify-content: space-between;
+	}
+  }
+ 
+  /**Desktop Query*/
+@media only screen and (min-width: 999px) {
+
+	nav li{
+		width:auto;
+	}
+	.container{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		width: 95%;
+		margin: auto;
+		gap: 15px;
+		justify-content: space-between;
+	}
+
+	#wrapper div{
+		display: flex;
+		flex-direction: row;
+		flex-basis: 25%;
+		flex-wrap: wrap;
+		gap: 12px;
+		justify-content: space-between;
+	}
+
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+	#food {
+	  animation: none;
+	}
+	.flip-card:hover .flip-card-inner,
+  .flip-card:focus-within .flip-card-inner,
+  .flip-card:active .flip-card-inner,
+  .flip-card:focus .flip-card-inner {
+	transform: rotateY(0deg)
+  }
+  .flip-card-back {
+	transform: rotateY(0deg);
+  }
+
+  }
